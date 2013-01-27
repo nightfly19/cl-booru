@@ -1,0 +1,23 @@
+(in-package :cl-booru)
+(defmethod webmethod ((directory (eql :|/posts/view|)) basename request)
+  ;;Input checking
+  (let ((page (<page>)) (session (<session> request)) image-number image title)
+    (handler-case
+      (setf image-number (parse-integer (string basename)))
+      (parse-error () (error 'page-not-found-error)))
+    (setf image (<image> image-number))
+    (when (not image)
+      (error 'page-not-found-error))
+    (<image>-log-view image (<session> request))
+    (render-session-info session page)
+    (setf title (<image>-title image))
+    (if (not (string-equal (<image>-title image) ""))
+      (setf (<page>-title page) (<image>-title image))
+      (setf (<page>-title page) (format nil "~A: ~A" +site-title+ (<image>-tags-as-string image))))
+    (setf (<page>-content-field page :description) (image-description image))
+    (setf (<page>-content-field page :sidebar)
+          (sidebar-view-body image request))
+    (setf (<page>-content-field page :body)
+          (posts-view-body image))
+    (<request>-respond request (<page>-apply-template page *template*)) ) )
+

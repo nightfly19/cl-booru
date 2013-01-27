@@ -1,0 +1,8 @@
+#!/bin/sh
+cd `dirname $0`
+total_ram=`free -m | head -n 2 | tail -n 1 | awk '{print $2}'`
+ram_for_cl_booru="250"
+exec /usr/bin/rlwrap /usr/bin/sbcl \
+  --noinform \
+  --dynamic-space-size $ram_for_cl_booru \
+  --load cl-booru.lisp

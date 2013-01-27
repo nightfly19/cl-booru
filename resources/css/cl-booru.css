@@ -1,0 +1,351 @@
+html{
+margin:0;
+padding:0;
+}
+
+body{
+margin:0;
+padding:0;
+font-size:14px;
+font-family:'Helvetica';
+min-width:1000px;
+}
+
+a, h1, h2, h3, h4, .new-user-name, .user-name{
+text-decoration:none;
+color:#006FFA;
+}
+
+h3{
+margin:0 0;
+}
+
+h5{
+margin:0;
+font-size: 1em;
+}
+
+body {
+background:white
+}
+
+header {
+height:50px;
+}
+
+header *{
+margin:0 2px 0 0;
+float:left;
+height:50px;
+}
+
+h1 {
+display:block;
+color:#0061DB;
+padding:5px;
+margin:0;
+height:40px !important;
+line-height:40px;
+font-size:2.5em;
+}
+
+#session-info{
+height:40px;
+padding:5px;
+float:right;
+line-height:40px;
+}
+
+#session-info *{
+float:none;
+}
+
+#session-info h4, #session-info a{
+}
+
+#nav-bar{
+display:block;
+background:#006FFA;
+height:28px;
+font-size:1.25em;
+margin:0;
+}
+
+#nav-bar ul{
+list-style-type:none;
+margin:0px;
+}
+
+#nav-bar input[type=search]{
+border:none;
+background:white;
+display:block;
+-webkit-appearance: none;
+-moz-appearance: none;
+height:24px;
+width:200px;
+margin:2px;
+}
+
+footer, #nav-bar a, #nav-bar input[type=submit]{
+color:white;
+}
+
+#search-submit{
+margin-right:4px;
+}
+
+#nav-bar input[type=submit]{
+font-size:0.85em;
+margin:0;
+}
+
+#nav-bar li, #nav-bar input{
+display:block;
+padding:0 4px;
+margin:0 1px;
+float:left;
+background:#0061DB;
+height:26px;
+line-height:26px;
+border:none;
+outline:none;
+}
+
+footer{
+display:block;
+background:#0061DB;
+border-style:solid;
+border-width:2px 0;
+padding:5px;
+border-color:#006FFA;
+clear:both;
+}
+
+#content-left{
+width:200px;
+min-height:100px;
+float:left;
+border: solid 0px #e0e0e0;
+border-width: 0 1px 0 0;
+padding:5px;
+margin-right:5px;
+font-size:0.9em;
+}
+
+#content-middle-content{
+width:786px;
+float:left;
+border: solid 0px #e0e0e0;
+border-width: 0 0 0 1px;
+padding-left: 5px;
+padding-right: 5px;
+margin-left: -6px;
+}
+
+.image-thumb{
+width:192px;
+height:200px;
+margin:2px;
+float:left;
+display:table;
+vertical-align:middle;
+text-align:center;
+overflow:hidden;
+padding:0;
+border-spacing:0;
+border-collapse:collapse;
+padding:0;
+}
+
+.image-thumb a{
+display:table-cell;
+border-spacing:0;
+border-collapse:collapse;
+padding:0;
+padding:0;
+margin:0;
+vertical-align:middle;
+text-align:center;
+}
+
+.image-thumb img{
+max-height:192px;
+max-width:192px;
+margin:0;
+padding:0;
+border:none;
+}
+
+.pager{
+text-align:center;
+d)isplay:block;
+margin:10px auto;
+clear:both;
+}
+
+.pager li{
+display:inline-block;
+padding:2px 6px;
+margin:0 3px;
+height:0.75em;
+line-height:0.75em;
+}
+
+.pager .pager-page-inactive{
+border: solid 1px #eaeaea;
+}
+
+.pager-page-inactive:hover{
+background:#006FFA;
+}
+
+.pager a:hover{
+color:white;
+}
+
+.full-image-view{
+width:100%;
+margin:0;
+}
+
+.full-image{
+display:block;
+max-width:100%;
+padding:0;
+margin:10px auto;
+}
+
+.post-meta{
+border: solid 0px #e0e0e0;
+border-width: 1px 0 0 0;
+padding:10px;
+}
+
+.action-buttons{
+height:1.5em;
+}
+
+.action-buttons a{
+display:inline-block;
+margin:0 5px;
+}
+
+#register-form, #login-form{
+}
+
+form label{
+display:block;
+}
+
+form input{
+display:block;
+margin-bottom:5px;
+}
+
+#post-edit-form, #post-comment-form {
+margin:5px;
+}
+
+#post-edit-form input[type=radio]{
+display:inline-block;
+}
+
+.lesser-text{
+color:gray;
+}
+
+#post-edit-form input[type=text], #upload-form input[type=text]{
+width: 75%;
+}
+
+#content-left-content{
+overflow:hidden;
+word-wrap:break-word;
+word-break:break-all;
+word-break:hyphenate;
+}
+
+#post-tags-box, #post-comment-box, #tags{
+width:75%;
+min-height:100px;
+}
+
+#post-comment-anonymously-checkbox{
+height: 1.25em;
+}
+
+#post-comment-anonymously-checkbox *{
+float:left;
+}
+
+#post-comment-submit{
+clear:both;
+}
+
+.post-comment-frame{
+margin:10px 5px;
+}
+
+.comment-number{
+color:gray;
+}
+
+.comment-header-blurb{
+color:black;
+font-weight:bold;
+}
+
+#image-sidebar ul{
+list-style-type:none;
+padding-left:10px;
+}
+
+.document{
+margin:10px;
+}
+
+.document h4{
+margin-bottom:0.25em;
+margin-top:1em;
+font-size:1em;
+}
+
+.document ul{
+margin-top:0.5em;
+padding-left:2em;
+}
+
+.document li{
+padding-left:0;
+}
+
+.document h5{
+display: inline-block;
+}
+
+#footer a{
+color: white;
+}
+
+#footer a:hover{
+text-decoration:underline;
+}
+
+#footer {
+text-align: center;
+}
+
+.category-preference {
+min-width:100px;
+padding:5px;
+float:left;
+}
+.category-prefernce *{
+display:block;
+width:100px;
+}
+
+#preferences-change-form input[type=submit]{
+clear:both;
+}

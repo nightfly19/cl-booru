@@ -1,0 +1,11 @@
+(in-package :cl-booru)
+
+(load "types/account.lisp")
+(load "types/category.lisp")
+(load "types/account-category.lisp")
+(load "types/session.lisp")
+(load "types/tag.lisp")
+(load "types/result-set.lisp")
+(load "types/image.lisp")
+(load "types/image-rating.lisp")
+(load "types/comment.lisp")
